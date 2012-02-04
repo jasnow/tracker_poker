@@ -24,6 +24,8 @@ end
 group :development, :test do
   gem 'mailcatcher'
   gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'simplecov', :require => false
   gem 'sqlite3'
 end
 

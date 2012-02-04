@@ -62,6 +62,11 @@ GEM
     eventmachine (0.12.10)
     execjs (1.2.13)
       multi_json (~> 1.0)
+    factory_girl (2.5.0)
+      activesupport
+    factory_girl_rails (1.6.0)
+      factory_girl (~> 2.5.0)
+      railties (>= 3.0.0)
     haml (3.1.4)
     happymapper (0.4.0)
       libxml-ruby (~> 2.0)
@@ -141,9 +146,19 @@ GEM
       railties (~> 3.1.0)
       sass (~> 3.1.10)
       tilt (~> 1.3.2)
+<<<<<<< HEAD
     sinatra (1.3.2)
       rack (~> 1.3, >= 1.3.6)
       rack-protection (~> 1.2)
+=======
+    simplecov (0.5.4)
+      multi_json (~> 1.0.3)
+      simplecov-html (~> 0.5.3)
+    simplecov-html (0.5.3)
+    sinatra (1.3.1)
+      rack (~> 1.3, >= 1.3.4)
+      rack-protection (~> 1.1, >= 1.1.2)
+>>>>>>> 21df3f37678df4a622c5f8aacba3e0d8e7b1edd8
       tilt (~> 1.3, >= 1.3.3)
     skinny (0.2.0)
       eventmachine (~> 0.12)
@@ -175,6 +190,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.1.1)
   devise
+  factory_girl_rails
   jquery-rails
   mailcatcher
   pg
@@ -182,5 +198,6 @@ DEPENDENCIES
   rails (= 3.1.1)
   rspec-rails
   sass-rails (~> 3.1.4)
+  simplecov
   sqlite3
   uglifier (>= 1.0.3)
