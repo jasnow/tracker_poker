@@ -13,17 +13,6 @@ describe PivotalController do
   
   describe "GET 'login_pivotal'" do
     it "returns http success" do
-<<<<<<< HEAD
-      get 'login'
-      response.should_not be_success
-    end
-  end
-
-  describe "GET 'projects'" do
-    it "returns http success" do
-      get 'projects'
-      response.should_not be_success
-=======
       get 'login_pivotal'
       response.should be_success
     end
@@ -47,7 +36,6 @@ describe PivotalController do
       post 'auth_pivotal' #, :params => {:user_name=>"test", :password=>"pass"}
       response.response_code.should == 302
       response.should redirect_to :pivotal
->>>>>>> 21df3f37678df4a622c5f8aacba3e0d8e7b1edd8
     end
   end
 end

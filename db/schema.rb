@@ -11,22 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20111217170206) do
-=======
 ActiveRecord::Schema.define(:version => 20120126051418) do
->>>>>>> 21df3f37678df4a622c5f8aacba3e0d8e7b1edd8
 
   create_table "pivotal_users", :force => true do |t|
     t.integer  "user_id"
     t.string   "token"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "room_users", :force => true do |t|
-    t.integer "room_id"
-    t.integer "user_id"
   end
 
   create_table "rooms", :force => true do |t|
@@ -36,8 +27,6 @@ ActiveRecord::Schema.define(:version => 20120126051418) do
     t.datetime "updated_at"
   end
 
-<<<<<<< HEAD
-=======
   create_table "rooms_users", :force => true do |t|
     t.integer "room_id"
     t.integer "user_id"
@@ -53,7 +42,6 @@ ActiveRecord::Schema.define(:version => 20120126051418) do
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
->>>>>>> 21df3f37678df4a622c5f8aacba3e0d8e7b1edd8
   create_table "story_votes", :force => true do |t|
     t.integer  "story_id"
     t.integer  "user_id"
